@@ -8,11 +8,17 @@ import Home from "./Home"
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Comp1 from './props/Comp1.jsx'
+import UseState from "./UseState/UseState.jsx"
 
 /*
     - Props :
       - props stands for properties.
       - Props are arguments passed into React components.
+
+    - GIT COMMANDS
+      1. git add .
+      2. git commit -m "update"
+      3. git push
 */
 
 let name = "Rohit"
@@ -31,7 +37,9 @@ const App = () => {
         <Footer />
       </BrowserRouter>
        */}
-       <Comp1 name={name} age={age} />
+       {/* <Comp1 name={name} age={age} /> */}
+
+       <UseState />
     </div>
   )
 }
