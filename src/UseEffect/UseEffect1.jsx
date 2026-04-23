@@ -1,4 +1,4 @@
-// Hooks UseEffect and data fetching
+// HooksUseEffect For data fetching
 import React, { use, useEffect, useState } from 'react'
 
 const UseEffect1 = () => {
@@ -20,10 +20,28 @@ const UseEffect1 = () => {
   }, [])
   return (
     <div>
-      <img src={image} alt="" /><br />
+      {image ?(
+      <img src={image} alt="random" />
+      ):(
+        <p>loading ...</p>
+      )}
+      <br />
+    
       <button onClick={data}>Change</button>
     </div>
   )
 }
 
 export default UseEffect1
+
+
+  //  <div>
+  
+  //     {image ? (
+  //       <img src="{image}" alt="Random" />
+  //     ) : (
+  //       <p>loading....</p>
+  //     )}
+  //     <br />
+  //     <button onClick={data}>change</button>
+  //   </div>
