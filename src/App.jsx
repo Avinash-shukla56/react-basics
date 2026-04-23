@@ -9,6 +9,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Comp1 from './props/Comp1.jsx'
 import UseState from "./UseState/UseState.jsx"
+import UseEffect from "./UseEffect/UseEffect.jsx"
+import UseEffect1 from "./UseEffect/UseEffect1.jsx"
 
 /*
     - Props :
@@ -39,7 +41,9 @@ const App = () => {
        */}
        {/* <Comp1 name={name} age={age} /> */}
 
-       <UseState />
+       {/* <UseState /> */}
+       {/* <UseEffect /> */}
+       <UseEffect1 />
     </div>
   )
 }
